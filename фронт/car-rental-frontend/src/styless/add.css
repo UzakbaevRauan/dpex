@@ -1,0 +1,134 @@
+
+.admin__section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 41em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h2{
+    color:  #1976d2;
+    text-align: center;
+}
+.admin__section-button{
+  align-items: center;
+  appearance: none;
+  background-color: #1976d2;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.admin__section-button:active,
+.admin__section-button:focus {
+  outline: none;
+}
+
+.admin__section-button:hover {
+  background-position: -20px -20px;
+}
+
+.admin__section-button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+.group {
+    position: relative;
+    margin: 45px 0;
+  }
+  textarea {
+    resize: none;
+  }
+  
+  input,
+  textarea {
+    background: none;
+    color: mix(white, #424242, 70);
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 320px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid mix(white, #424242, 70);
+    &:focus {
+      outline: none;
+    }
+    &:focus ~ label,
+    &:valid ~ label {
+      top: -14px;
+      font-size: 12px;
+      color: #2196F3;
+    }
+    &:focus ~ .bar:before {
+      width: 320px;
+    }
+  }
+  
+  input[type="password"] {
+    letter-spacing: 0.3em;
+  }
+  
+  label {
+    color: mix(white, #424242, 70);
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+  }
+  
+  .bar {
+    position: relative;
+    display: block;
+    width: 320px;
+    &:before {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 0px;
+      position: absolute;
+      background: #2196F3;
+      transition: 300ms ease all;
+      left: 0%;
+    }
+  }
+  input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+    display: none;
+  }
+  .flex-container {
+    display: flex;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.group textarea,
+.group input[type="file"] {
+    width: 100%;
+}
